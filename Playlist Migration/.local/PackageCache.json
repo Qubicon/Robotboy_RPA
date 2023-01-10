@@ -218,15 +218,15 @@
         "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\22.12.0-preview\\lib/net6.0-windows7.0/UiPath.CV.Activities.dll",
         "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\22.12.0-preview\\lib/net6.0-windows7.0/UiPath.CV.dll",
         "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\22.12.0-preview\\lib/net6.0-windows7.0/UiPath.Semantic.Activities.dll",
-        "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\22.12.0-preview\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\22.12.0-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationCore.dll",
         "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\22.12.0-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.Activities.dll",
         "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\22.12.0-preview\\lib/net6.0-windows7.0/UiPath.UIAutomationNext.dll",
+        "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\22.12.0-preview\\lib/net6.0-windows7.0/UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.vision\\3.7.0\\lib/net6.0-windows7.0/UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.vision\\3.7.0\\lib/net6.0-windows7.0/UiPath.Vision.Core.dll",
-        "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.vision\\3.7.0\\lib/net6.0-windows7.0/UiPath.Vision.dll",
         "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.vision\\3.7.0\\lib/net6.0-windows7.0/UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.vision\\3.7.0\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll"
+        "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.vision\\3.7.0\\lib/net6.0-windows7.0/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.vision\\3.7.0\\lib/net6.0-windows7.0/UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.uiautomation.activities\\22.12.0-preview"
     }
@@ -7075,10 +7075,10 @@
         "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\22.12.0-preview\\lib\\net6.0-windows7.0\\UiPath.CV.Activities.dll",
         "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\22.12.0-preview\\lib\\net6.0-windows7.0\\UiPath.CV.dll",
         "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\22.12.0-preview\\lib\\net6.0-windows7.0\\UiPath.Semantic.Activities.dll",
-        "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\22.12.0-preview\\lib\\net6.0-windows7.0\\UiPath.UiAutomation.Activities.dll",
         "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\22.12.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationCore.dll",
         "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\22.12.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.Activities.dll",
-        "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\22.12.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.dll"
+        "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\22.12.0-preview\\lib\\net6.0-windows7.0\\UiPath.UIAutomationNext.dll",
+        "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\22.12.0-preview\\lib\\net6.0-windows7.0\\UiPath.UiAutomation.Activities.dll"
       ],
       "Path": "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.uiautomation.activities.runtime\\22.12.0-preview"
     },
@@ -7090,9 +7090,9 @@
       "Assemblies": [
         "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.vision\\3.7.0\\lib\\net6.0-windows7.0\\UiPath.Vision.AzureComputerVision.dll",
         "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.vision\\3.7.0\\lib\\net6.0-windows7.0\\UiPath.Vision.Core.dll",
-        "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.vision\\3.7.0\\lib\\net6.0-windows7.0\\UiPath.Vision.dll",
         "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.vision\\3.7.0\\lib\\net6.0-windows7.0\\UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.vision\\3.7.0\\lib\\net6.0-windows7.0\\UiPath.Vision.Tesseract.dll"
+        "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.vision\\3.7.0\\lib\\net6.0-windows7.0\\UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.vision\\3.7.0\\lib\\net6.0-windows7.0\\UiPath.Vision.dll"
       ],
       "Path": "C:\\Users\\Qubicon\\.nuget\\packages\\uipath.vision\\3.7.0"
     }

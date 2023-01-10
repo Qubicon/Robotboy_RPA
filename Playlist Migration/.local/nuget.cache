@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dJ0jShIAJTL9AmEW6N+GKlT7bsdxztkldNhKOE5h/yTLi8ZHxyICOBJp6Ke9A0k9q8fKv5DmC3x+UOrtAAgDbA==",
+  "dgSpecHash": "K45ptRDf0QQGFJ8H90Qd1F5kljse6+MF3CXLU1Pv6Q22QKmnYYpc9+NqekIFUHKaCISd75fcVWA6xBjzcPEXLQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Qubicon\\Documents\\UiPath\\Playlist Migration\\.local\\",
+  "projectFilePath": "C:\\Users\\Qubicon\\Documents\\GitHub\\Robotboy_RPA\\Playlist Migration\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\Qubicon\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\Qubicon\\.nuget\\packages\\azure.core\\1.18.0\\azure.core.1.18.0.nupkg.sha512",

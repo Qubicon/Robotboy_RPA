@@ -20824,9 +20824,9 @@
     "restore": {
       "projectUniqueName": "Playlist Migration",
       "projectName": "Playlist Migration",
-      "projectPath": "C:\\Users\\Qubicon\\Documents\\UiPath\\Playlist Migration\\.local",
+      "projectPath": "C:\\Users\\Qubicon\\Documents\\GitHub\\Robotboy_RPA\\Playlist Migration\\.local",
       "packagesPath": "C:\\Users\\Qubicon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Qubicon\\Documents\\UiPath\\Playlist Migration\\.local"
+      "outputPath": "C:\\Users\\Qubicon\\Documents\\GitHub\\Robotboy_RPA\\Playlist Migration\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
