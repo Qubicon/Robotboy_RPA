@@ -1,7 +1,7 @@
 {
   "name": "Playlist Migration",
   "description": "Blank Process",
-  "main": "Data Scraping.xaml",
+  "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.17.0-preview]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -66,7 +66,7 @@
     },
     {
       "filePath": "Data Scraping.xaml",
-      "uniqueId": "46932be6-ccbc-4cc3-8921-8374b4e1f978",
+      "uniqueId": "ce3f24d6-7159-46f5-989c-6bcf5064d7a3",
       "input": [],
       "output": []
     }
