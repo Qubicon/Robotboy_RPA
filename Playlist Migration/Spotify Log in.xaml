@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Spotify_Log_in" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="970,1872" sap2010:WorkflowViewState.IdRef="Spotify_Log_in_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Spotify_Log_in" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1181,1978" sap2010:WorkflowViewState.IdRef="Spotify_Log_in_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
       <x:String>System.Activities</x:String>
@@ -81,29 +81,29 @@
       <AssemblyReference>System.Private.Uri</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Spotify_Log_in" sap:VirtualizedContainerService.HintSize="658,1848" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Spotify_Log_in" sap:VirtualizedContainerService.HintSize="658,1913" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="616,1760" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="616,1825" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
-        <Variable x:TypeArguments="ss:SecureString" Name="password" />
-        <Variable x:TypeArguments="x:String" Name="username" />
+        <Variable x:TypeArguments="ss:SecureString" Name="SpotifyPassword" />
+        <Variable x:TypeArguments="x:String" Name="SpotifuUsername" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application 'spotify.exe  Spotify'" FileName="C:\Users\Qubicon\AppData\Roaming\Spotify\spotify.exe" sap:VirtualizedContainerService.HintSize="554,1649" sap2010:WorkflowViewState.IdRef="OpenApplication_3" InformativeScreenshot="6a0decdbe91cc2c27497160b522deeaf" Selector="&lt;wnd app='spotify.exe' cls='Chrome_WidgetWin_0' title='Spotify' /&gt;">
+      <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Open Application 'spotify.exe  Spotify'" FileName="C:\Users\Qubicon\AppData\Roaming\Spotify\spotify.exe" sap:VirtualizedContainerService.HintSize="554,1714" sap2010:WorkflowViewState.IdRef="OpenApplication_3" InformativeScreenshot="6a0decdbe91cc2c27497160b522deeaf" Selector="&lt;wnd app='spotify.exe' cls='Chrome_WidgetWin_0' title='Spotify' /&gt;" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}">
         <ui:OpenApplication.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,1502" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,1567" sap2010:WorkflowViewState.IdRef="Sequence_9">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:Boolean" Name="status" />
               </Sequence.Variables>
@@ -112,8 +112,9 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Spotify Test Account" CacheStrategy="None" DisplayName="Get Credential" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="478,168" sap2010:WorkflowViewState.IdRef="GetRobotCredential_4" Password="[password]" Username="[username]" />
-              <ui:UiElementExists sap2010:Annotation.AnnotationText="" DisplayName="Element Exists 'grouping'" Exists="[status]" sap:VirtualizedContainerService.HintSize="478,138" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+              <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="478,25" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+              <ui:GetRobotCredential AssetName="Spotify Test Account" CacheStrategy="None" DisplayName="Get Credential" FolderPath="Shared" sap:VirtualizedContainerService.HintSize="478,168" sap2010:WorkflowViewState.IdRef="GetRobotCredential_4" Password="[SpotifyPassword]" TimeoutMS="{x:Null}" Username="[SpotifuUsername]" />
+              <ui:UiElementExists sap2010:Annotation.AnnotationText="" ContinueOnError="{x:Null}" DisplayName="Element Exists 'grouping'" Exists="[status]" sap:VirtualizedContainerService.HintSize="478,138" sap2010:WorkflowViewState.IdRef="UiElementExists_2" Result="{x:Null}">
                 <ui:UiElementExists.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a6c4555e-ddbf-4e38-bdbc-c6082ae8d1fa" InformativeScreenshot="0f6d6dc00d3a5bdba0716175bc54e188" Selector="&lt;ctrl name='Spotify - Login' role='document' /&gt;&lt;ctrl name='Log in to continue.' idx='1' /&gt;&lt;ctrl name='Log in to continue.' text='Log in to continue.' idx='1' /&gt;" TimeoutMS="1000">
                     <ui:Target.WaitForReady>
@@ -135,7 +136,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'grouping Log'" sap:VirtualizedContainerService.HintSize="358,135" sap2010:WorkflowViewState.IdRef="TypeInto_4" Text="[username]">
+                    <ui:TypeInto Activate="True" AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into 'grouping Log'" EmptyField="{x:Null}" sap:VirtualizedContainerService.HintSize="358,135" sap2010:WorkflowViewState.IdRef="TypeInto_4" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Text="[SpotifuUsername]">
                       <ui:TypeInto.Target>
                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="96612108-d366-4892-8f7f-fd7e512053ad" InformativeScreenshot="49dc2c1e10b82e56e8e9aab1e1f89cf3" Selector="&lt;ctrl name='Spotify - Login' role='document' /&gt;&lt;ctrl name='Log in to continue.' role='grouping' /&gt;&lt;ctrl name='Email or username' role='editable text' /&gt;&lt;ctrl name='Email or username' role='editable text' /&gt;">
                           <ui:Target.TimeoutMS>
@@ -147,7 +148,7 @@
                         </ui:Target>
                       </ui:TypeInto.Target>
                     </ui:TypeInto>
-                    <ui:TypeSecureText AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Secure Text 'editable text  Password'" sap:VirtualizedContainerService.HintSize="358,107" sap2010:WorkflowViewState.IdRef="TypeSecureText_4" SecureText="[password]">
+                    <ui:TypeSecureText Activate="True" AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Secure Text 'editable text  Password'" EmptyField="{x:Null}" sap:VirtualizedContainerService.HintSize="358,107" sap2010:WorkflowViewState.IdRef="TypeSecureText_4" SecureText="[SpotifyPassword]" SendWindowMessages="{x:Null}" SimulateType="{x:Null}">
                       <ui:TypeSecureText.Target>
                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b9994f65-1305-482a-be5d-3e0d8d937f26" InformativeScreenshot="3813d711abf4bbfc4aa71c3f428fc13a" Selector="&lt;ctrl name='Spotify - Login' role='document' /&gt;&lt;ctrl name='Log in to continue.' role='grouping' /&gt;&lt;ctrl name='Password' role='editable text' /&gt;&lt;ctrl name='Password' role='editable text' /&gt;">
                           <ui:Target.TimeoutMS>
@@ -159,7 +160,7 @@
                         </ui:Target>
                       </ui:TypeSecureText.Target>
                     </ui:TypeSecureText>
-                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'grouping'" sap:VirtualizedContainerService.HintSize="358,107" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+                    <ui:Click AlterIfDisabled="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Click 'grouping'" sap:VirtualizedContainerService.HintSize="358,107" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" UnblockInput="{x:Null}">
                       <ui:Click.CursorPosition>
                         <ui:CursorPosition Position="Center">
                           <ui:CursorPosition.OffsetX>
@@ -191,7 +192,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <Throw Exception="[new Exception(&quot;You are already logged in.&quot;)]" sap:VirtualizedContainerService.HintSize="358,90" sap2010:WorkflowViewState.IdRef="Throw_3" />
-                    <TerminateWorkflow DisplayName="Terminate Workflow" sap:VirtualizedContainerService.HintSize="358,117" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_1" Reason="Something went wrong. Please try again!" />
+                    <TerminateWorkflow DisplayName="Terminate Workflow" Exception="{x:Null}" sap:VirtualizedContainerService.HintSize="358,117" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_1" Reason="Something went wrong. Please try again!" />
                   </Sequence>
                 </If.Else>
               </If>
