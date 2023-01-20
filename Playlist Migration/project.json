@@ -1,7 +1,7 @@
 {
   "name": "Playlist Migration",
   "description": "Blank Process",
-  "main": "Migration.xaml",
+  "main": "Migration - Copy (1).xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.17.0-preview]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -79,6 +79,18 @@
     {
       "filePath": "Migration.xaml",
       "uniqueId": "dbf871b6-427d-4894-b611-ad7395f14704",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Migration - Copy (1).xaml",
+      "uniqueId": "1361c239-0ff5-4102-acec-e768aa07e71c",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Send Email.xaml",
+      "uniqueId": "8f42e48f-c671-43d2-946e-12474d9d88a1",
       "input": [],
       "output": []
     }

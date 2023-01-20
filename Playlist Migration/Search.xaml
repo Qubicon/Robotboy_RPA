@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>970,3288</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1181,3727</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Search_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="54">
@@ -86,7 +86,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Search" sap:VirtualizedContainerService.HintSize="782,3223" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Search" sap:VirtualizedContainerService.HintSize="860,3662" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="playlistName" />
     </Sequence.Variables>
@@ -95,7 +95,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="740,3135" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="818,3574" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="userInput" />
         <Variable x:TypeArguments="x:Boolean" Name="topResultIsPlaylist" />
@@ -105,16 +105,27 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Delay Duration="00:00:09" sap:VirtualizedContainerService.HintSize="678,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="678,2894" sap2010:WorkflowViewState.IdRef="TryCatch_1">
-        <TryCatch.Try>
-          <Sequence sap:VirtualizedContainerService.HintSize="640,2666" sap2010:WorkflowViewState.IdRef="Sequence_16">
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="756,257" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,178" sap2010:WorkflowViewState.IdRef="Sequence_18">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'link  Search'" sap:VirtualizedContainerService.HintSize="598,107" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="358,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+          </Sequence>
+        </ui:CommentOut.Body>
+      </ui:CommentOut>
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="756,3166" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+        <TryCatch.Try>
+          <Sequence sap:VirtualizedContainerService.HintSize="718,2938" sap2010:WorkflowViewState.IdRef="Sequence_16">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'link  Search'" sap:VirtualizedContainerService.HintSize="676,107" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -126,17 +137,14 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="51a835bc-f5e7-4eb0-a2b1-98c66b4b25e1" InformativeScreenshot="b29239376a68479ea0f651ee144d71c7" Selector="&lt;wnd app='spotify.exe' cls='Chrome_WidgetWin_0' /&gt;&lt;ctrl name='Spotify – Web Player' role='document' /&gt;&lt;ctrl name='Main' role='grouping' /&gt;&lt;ctrl name='Search' role='link' text='Search' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="51a835bc-f5e7-4eb0-a2b1-98c66b4b25e1" InformativeScreenshot="b29239376a68479ea0f651ee144d71c7" Selector="&lt;wnd app='spotify.exe' cls='Chrome_WidgetWin_0' /&gt;&lt;ctrl name='Spotify – Web Player' role='document' /&gt;&lt;ctrl name='Main' role='grouping' /&gt;&lt;ctrl name='Search' role='link' text='Search' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'grouping'" sap:VirtualizedContainerService.HintSize="598,107" sap2010:WorkflowViewState.IdRef="Click_18" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'grouping'" sap:VirtualizedContainerService.HintSize="676,107" sap2010:WorkflowViewState.IdRef="Click_18" KeyModifiers="None" MouseButton="BTN_LEFT">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -158,12 +166,12 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="598,239" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="What do you want to listen to?" Title="Search">
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="676,239" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="What do you want to listen to?" Title="Search">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[userInput]</OutArgument>
               </ui:InputDialog.Result>
             </ui:InputDialog>
-            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'grouping'" sap:VirtualizedContainerService.HintSize="598,135" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="[userInput]">
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'grouping'" sap:VirtualizedContainerService.HintSize="676,135" sap2010:WorkflowViewState.IdRef="TypeInto_3" Text="[userInput]">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f8d2174e-534e-49e9-aca5-b33267524fb8" InformativeScreenshot="76919da921dff6c1f90b34fca82b45da" Selector="&lt;wnd app='spotify.exe' cls='Chrome_WidgetWin_0' /&gt;&lt;ctrl name='Spotify – Search' role='document' text='https://xpui.app.spotify.com/index.html' /&gt;&lt;ctrl name='Top bar and user menu' role='grouping' /&gt;&lt;ctrl idx='10' /&gt;" TimeoutMS="500">
                   <ui:Target.WaitForReady>
@@ -178,7 +186,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:TypeInto>
-            <ui:UiElementExists sap2010:Annotation.AnnotationText="Verificăm dacă cel mai relevant rezultat este un Playlist." DisplayName="Element Exists 'grouping  Top result'" Exists="[topResultIsPlaylist]" sap:VirtualizedContainerService.HintSize="598,138" sap2010:WorkflowViewState.IdRef="UiElementExists_6">
+            <ui:UiElementExists sap2010:Annotation.AnnotationText="Verificăm dacă cel mai relevant rezultat este un Playlist." DisplayName="Element Exists 'grouping  Top result'" Exists="[topResultIsPlaylist]" sap:VirtualizedContainerService.HintSize="676,138" sap2010:WorkflowViewState.IdRef="UiElementExists_6">
               <ui:UiElementExists.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c2023d91-a205-4e4a-9660-2d98b71899d5" InformativeScreenshot="d7faf07478f7aa946efb754ecbe15eb9" Selector="&lt;wnd app='spotify.exe' cls='Chrome_WidgetWin_0' /&gt;&lt;ctrl name='Spotify – Search' role='document' /&gt;&lt;ctrl name='Top result' role='pane' /&gt;&lt;ctrl role='grouping' text='By SpotifyPLAYLIST' /&gt;" TimeoutMS="1000">
                   <ui:Target.WaitForReady>
@@ -192,7 +200,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:UiElementExists>
-            <If Condition="[topResultIsPlaylist = True]" sap:VirtualizedContainerService.HintSize="598,1652" sap2010:WorkflowViewState.IdRef="If_5">
+            <If Condition="[topResultIsPlaylist = True]" sap:VirtualizedContainerService.HintSize="676,1924" sap2010:WorkflowViewState.IdRef="If_5">
               <If.Then>
                 <Sequence sap:VirtualizedContainerService.HintSize="400,195" sap2010:WorkflowViewState.IdRef="Sequence_12">
                   <sap:WorkflowViewStateService.ViewState>
@@ -225,7 +233,7 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence sap:VirtualizedContainerService.HintSize="520,1281" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                <Sequence sap:VirtualizedContainerService.HintSize="598,1553" sap2010:WorkflowViewState.IdRef="Sequence_15">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:Boolean" Name="playlistsButton" />
                   </Sequence.Variables>
@@ -234,7 +242,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:UiElementExists DisplayName="Element Exists 'check box  Playlists'" Exists="[playlistsButton]" sap:VirtualizedContainerService.HintSize="478,107" sap2010:WorkflowViewState.IdRef="UiElementExists_7">
+                  <ui:UiElementExists DisplayName="Element Exists 'check box  Playlists'" Exists="[playlistsButton]" sap:VirtualizedContainerService.HintSize="556,107" sap2010:WorkflowViewState.IdRef="UiElementExists_7">
                     <ui:UiElementExists.Target>
                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3fdf831f-e4c1-4608-914a-2ee7a419d738" InformativeScreenshot="75475e323c69330f86aad6ab705d80df" Selector="&lt;wnd app='spotify.exe' cls='Chrome_WidgetWin_0' /&gt;&lt;ctrl name='Spotify – Search' role='document' /&gt;&lt;ctrl name='Spotify – Search' role='grouping' /&gt;&lt;ctrl name='Playlists' role='link' /&gt;&lt;ctrl name='Playlists' role='check box' text='Playlists' /&gt;" TimeoutMS="1000">
                         <ui:Target.WaitForReady>
@@ -243,15 +251,15 @@
                       </ui:Target>
                     </ui:UiElementExists.Target>
                   </ui:UiElementExists>
-                  <If Condition="[playlistsButton = True]" sap:VirtualizedContainerService.HintSize="478,1046" sap2010:WorkflowViewState.IdRef="If_6">
+                  <If Condition="[playlistsButton = True]" sap:VirtualizedContainerService.HintSize="556,1318" sap2010:WorkflowViewState.IdRef="If_6">
                     <If.Then>
-                      <Sequence sap:VirtualizedContainerService.HintSize="400,614" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                      <Sequence sap:VirtualizedContainerService.HintSize="478,886" sap2010:WorkflowViewState.IdRef="Sequence_13">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'check box  Playlists'" sap:VirtualizedContainerService.HintSize="358,107" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'check box  Playlists'" sap:VirtualizedContainerService.HintSize="436,107" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT">
                           <ui:Click.CursorPosition>
                             <ui:CursorPosition Position="Center">
                               <ui:CursorPosition.OffsetX>
@@ -273,7 +281,7 @@
                             </ui:Target>
                           </ui:Click.Target>
                         </ui:Click>
-                        <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'grouping'" sap:VirtualizedContainerService.HintSize="358,107" sap2010:WorkflowViewState.IdRef="GetValue_1">
+                        <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'grouping'" sap:VirtualizedContainerService.HintSize="436,107" sap2010:WorkflowViewState.IdRef="GetValue_1">
                           <ui:GetValue.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4f88b0bb-46e7-4d04-9cc7-9cc1f21ac8c0" InformativeScreenshot="532ac13b7aa5cb63249576fe07606b97" Selector="&lt;wnd app='spotify.exe' cls='Chrome_WidgetWin_0' /&gt;&lt;ctrl name='Spotify – Search' role='document' /&gt;&lt;ctrl name='Spotify – Search' role='grouping' /&gt;&lt;ctrl name='*' role='link' idx='1' /&gt;&lt;ctrl role='grouping' /&gt;" WaitForReady="INTERACTIVE">
                               <ui:Target.TimeoutMS>
@@ -285,7 +293,7 @@
                             <OutArgument x:TypeArguments="x:String">[out_PlaylistName]</OutArgument>
                           </ui:GetValue.Value>
                         </ui:GetValue>
-                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'grouping'" sap:VirtualizedContainerService.HintSize="358,107" sap2010:WorkflowViewState.IdRef="Click_17" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'grouping'" sap:VirtualizedContainerService.HintSize="436,107" sap2010:WorkflowViewState.IdRef="Click_17" KeyModifiers="None" MouseButton="BTN_LEFT">
                           <ui:Click.CursorPosition>
                             <ui:CursorPosition Position="Center">
                               <ui:CursorPosition.OffsetX>
@@ -307,7 +315,33 @@
                             </ui:Target>
                           </ui:Click.Target>
                         </ui:Click>
-                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="358,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[out_PlaylistName]" />
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,357" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="400,278" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" sap2010:Annotation.AnnotationText="Folosim end ca să ajungem la ultimul track al playlist-ului cu proprietatea WaitForReady - COMPLETE&#xD;&#xA;" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="358,190" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="end" KeyModifiers="None" SpecialKey="True">
+                                <ui:SendHotkey.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="f0eb3906-a046-429b-8a9c-94ac720b9142" WaitForReady="COMPLETE">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                  </ui:Target>
+                                </ui:SendHotkey.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:SendHotkey>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
                       </Sequence>
                     </If.Then>
                     <If.Else>
@@ -327,7 +361,7 @@
           </Sequence>
         </TryCatch.Try>
         <TryCatch.Catches>
-          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="644,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="722,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
