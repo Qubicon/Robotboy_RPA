@@ -1,6 +1,6 @@
 # Playlist migration
 
-Robot that automatically migrates a playlist from Spotify to YouTube.
+Our robot automatically migrates a playlist from Spotify to YouTube.
 
 ## How it works
 
