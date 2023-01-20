@@ -9,6 +9,7 @@ Robot that automatically migrates a playlist from Spotify to YouTube.
 * After opening the playlist, data scraping is performed, which retrieves the songs contained in the playlist, along with the album and other details. The results are saved in an Excel file.
 * The robot opens the YouTube website, performs login using the credentials stored in an asset.
 * The Excel file created previously is read, and every song is searched on YouTube and added to the playlist. After doing this, for each song, the status is written in the Excel file: if it was added successfully to the playlist or not.
+* The robot sends an email with the generated Excel file and the Config.xlsx file that contains the URL to the new Youtube playlist.
 
 ## Dependencies
 
